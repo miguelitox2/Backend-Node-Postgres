@@ -1,0 +1,27 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+  "title": "node.js",
+  "description": "Descrição do teste",
+  "duration": 10
+}
+
+###
+
+GET http://localhost:3333/videos?search=edited
+
+###
+
+PUT http://localhost:3333/videos/28edf9ee-410b-4055-a991-5facbde40744
+content-type: application/json
+
+{
+  "title": "edited",
+  "description": "Descrição atualizada",
+  "duration": 20
+}
+
+###
+
+DELETE http://localhost:3333/videos/6ed8179e-8b75-473c-87e4-ecb2fb1cccd2
