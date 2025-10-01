@@ -7,6 +7,10 @@ const server = fastify();
 /* const database = new DatabaseMemory(); */
 const database = new DatabasePostgres();
 
+server.get("/", (request, reply) => {
+  return reply.status(200).send("Welcome to my API!");
+});
+
 /* Criar video */
 server.post("/videos", async (request, reply) => {
   const { title, description, duration } = request.body;

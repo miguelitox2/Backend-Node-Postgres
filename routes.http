@@ -1,4 +1,4 @@
-POST http://localhost:3333/videos
+POST https://backend-node-postgres.onrender.com/videos
 Content-Type: application/json
 
 {
@@ -9,11 +9,11 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/videos?search=edited
+GET https://backend-node-postgres.onrender.com/videos
 
 ###
 
-PUT http://localhost:3333/videos/28edf9ee-410b-4055-a991-5facbde40744
+PUT https://backend-node-postgres.onrender.com/videos/28edf9ee-410b-4055-a991-5facbde40744
 content-type: application/json
 
 {
@@ -24,4 +24,4 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:3333/videos/6ed8179e-8b75-473c-87e4-ecb2fb1cccd2
+DELETE https://backend-node-postgres.onrender.com/videos/68016dc6-08e0-404b-b7e3-5983094a140b
