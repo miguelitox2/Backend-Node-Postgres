@@ -8,7 +8,7 @@ const server = fastify();
 const database = new DatabasePostgres();
 
 server.get("/", (request, reply) => {
-  return reply.status(200).send("Welcome to my API!");
+  return res.send("Welcome to my API!");
 });
 
 /* Criar video */
